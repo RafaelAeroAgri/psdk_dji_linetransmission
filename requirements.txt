@@ -1,0 +1,10 @@
+# Requisitos Python para Controlador de Servo PSDK DJI
+# Raspberry Pi 4B
+
+# Biblioteca para controle de GPIO
+RPi.GPIO>=0.7.0
+
+# Para desenvolvimento (opcional)
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.8.0

@@ -1,0 +1,22 @@
+{
+  "servo": {
+    "gpio_pin": 18,
+    "frequency": 50,
+    "min_pulse_width": 500,
+    "max_pulse_width": 2500,
+    "position_closed": 0,
+    "position_open": 180,
+    "default_position": 0
+  },
+  "psdk": {
+    "app_name": "Servo Controller",
+    "app_version": "1.0.0",
+    "button_id": "servo_toggle",
+    "button_name": "Controle Servo",
+    "button_description": "Alterna posição do servo"
+  },
+  "system": {
+    "log_level": "INFO",
+    "update_rate": 50
+  }
+}
