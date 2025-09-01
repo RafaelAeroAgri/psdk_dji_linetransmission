@@ -1,0 +1,76 @@
+{
+  "psdk": {
+    "app_info": {
+      "app_name": "lancamento_cabo",
+      "app_id": "169427",
+      "app_key": "81e159bcf9efda885569fd05255eb67",
+      "app_basic_license": "KevEHH4XSa9t/EmNehARLeP4JTSTPTWD8gfvMkaZLuVN+MG7HpgY3TFL6TgFSr0nkp6/JPmO3wPPuBfdxFf4kdEfElbXIZ5HoiCfla7e0Yiq/Lv3NDhBEg5MwVhCCDbQ4Guk46YagrTU16hyTTcaKa5OEUQX6tjUUFqZIbeiPoWaL2DDGCd9HxyFEm0pAzIonOTHtYFbr2PP1Miehdg/AVzE4KWAco84Cm96CWN61Dv6SMTqjkA2H22I2TwpSe2uvVYZo2Cf7h8M86uhX6dK5ILkjdjFDzq1ScfRrDrFijlyAYWI0hto+EQCojnBivP0Bbnzu5SPFwrTukpTnZct3w==",
+      "app_version": "1.0.0",
+      "sdk_type": "Payload SDK"
+    },
+    "network": {
+      "psdk_port": 14550,
+      "protocol": "udp",
+      "auto_connect": true,
+      "connection_timeout": 30,
+      "retry_interval": 5,
+      "max_retries": 3
+    },
+    "ui": {
+      "button_id": "servo_toggle",
+      "button_name": "Controle Servo",
+      "button_description": "Alterna posição do servo para lançamento de cabo",
+      "button_position": {
+        "x": 100,
+        "y": 200
+      },
+      "button_style": {
+        "background_color": "#007ACC",
+        "text_color": "#FFFFFF",
+        "border_radius": 8,
+        "font_size": 16
+      }
+    },
+    "servo_control": {
+      "gpio_pin": 18,
+      "frequency": 50,
+      "min_pulse_width": 500,
+      "max_pulse_width": 2500,
+      "position_closed": 0,
+      "position_open": 180,
+      "default_position": 0,
+      "movement_speed": 0.5,
+      "auto_return": true,
+      "return_delay": 5000
+    },
+    "system": {
+      "log_level": "INFO",
+      "update_rate": 50,
+      "auto_start": true,
+      "watchdog_enabled": true,
+      "watchdog_timeout": 30,
+      "max_log_size": "100MB",
+      "log_rotation": "daily"
+    },
+    "drone_compatibility": {
+      "supported_models": [
+        "M300 RTK",
+        "M30 Series",
+        "Mavic 3 Enterprise",
+        "Mavic 2 Enterprise"
+      ],
+      "firmware_version": ">= 01.00.0000",
+      "psdk_version": ">= 3.0.0"
+    },
+    "safety": {
+      "emergency_stop": true,
+      "max_servo_angle": 180,
+      "movement_limits": {
+        "min_angle": 0,
+        "max_angle": 180
+      },
+      "timeout_protection": true,
+      "timeout_duration": 10000
+    }
+  }
+}

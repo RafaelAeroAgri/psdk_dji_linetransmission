@@ -9,11 +9,13 @@
     "default_position": 0
   },
   "psdk": {
-    "app_name": "Servo Controller",
+    "app_name": "lancamento_cabo",
     "app_version": "1.0.0",
+    "app_id": "169427",
+    "app_key": "81e159bcf9efda885569fd05255eb67",
     "button_id": "servo_toggle",
     "button_name": "Controle Servo",
-    "button_description": "Alterna posição do servo"
+    "button_description": "Alterna posição do servo para lançamento de cabo"
   },
   "system": {
     "log_level": "INFO",
